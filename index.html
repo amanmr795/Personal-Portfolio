@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="new1.css">
+    <link rel="stylesheet" href="new1Media.css">
+    <link rel="stylesheet" href="ai-features.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Aman</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Aman</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/3.png" alt="Aman profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Aman</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Non Core.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="window.open('https://codolio.com/profile/aman_iiti/', '_blank')">Codolio</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/amaniitindore795/', '_blank')">
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/amanmr795', '_blank')">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/my-img-removebg.png" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1+ Year <br>Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Tech. in Electrical Engineering <br>From IIT Indore</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    I am a passionate individual currently pursuing B.Tech. in Electrical Engineering from the prestigious IIT Indore. Hailing from the vibrant town of Panchkula, Haryana, my journey through academics has been shaped by both my roots and my aspirations.
+                    While my academic journey is rooted in Electrical Engineering, my curiosity for coding has been an evolving narrative. I ventured into the world of coding, and it has been an absolute revelation.
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div><h3>Java</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div><h3>AI/ML</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div><h3>JavaScript</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div><h3>HTML/CSS</h3></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div><h3>Python</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div><h3>React JS</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div><h3>MySQL</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div><h3>Git/GitHub</h3></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <!-- ── Project 1: SoulWisdom ── -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/SoulWisdom.png" alt="Project-1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">SoulWisdom</h2>
+
+                    <!-- AI Summary Box -->
+                    <div class="ai-summary-box" id="summary-1" style="display:none;">
+                        <div class="ai-summary-label">✨ AI Summary</div>
+                        <p class="ai-summary-text" id="summary-text-1"></p>
+                    </div>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/amanmr795/SoulWisdom.git', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://soul-wisdom.vercel.app/', '_blank')">
+                            Demo
+                        </button>
+                        <!-- AI Summarize Button -->
+                        <button class="btn ai-summarize-btn" id="summarize-btn-1"
+                            onclick="summarizeProject(1,'Mental Wellness Web App - SoulWisdom',
+                                'Developed a responsive mental wellness web application that provides users with accessible self-care resources and personalized support guidance. Designed an intuitive and engaging user interface using React to improve user experience and interaction. Implemented fast and responsive styling with Tailwind CSS and deployed the application for real-time access, enabling users to explore mental health resources in a seamless and supportive environment.',
+                                'https://github.com/amanmr795/SoulWisdom.git',
+                                'https://soul-wisdom.vercel.app/'
+                            )">
+                            ✨ Ask AI
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- ── Project 2: DC-DC Converter ── -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Grey_box_modeling.png" alt="Project-2" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">PS Automation</h2>
+
+                    <!-- AI Summary Box -->
+                    <div class="ai-summary-box" id="summary-2" style="display:none;">
+                        <div class="ai-summary-label">✨ AI Summary</div>
+                        <p class="ai-summary-text" id="summary-text-2"></p>
+                    </div>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/amanmr795/Grey-box-Approach-for-Modeling-of-Converter-Interfaced-Power-Systems.git', '_blank')">
+                            Github
+                        </button>
+                        <!-- AI Summarize Button -->
+                        <button class="btn ai-summarize-btn" id="summarize-btn-2" 
+                            onclick="summarizeProject(2,'Grey-box Approach for Modeling of Converter Interfaced Power Systems',
+                                'Developed a validated grey-box model of a power converter by integrating PSCAD simulation results with MATLAB-based mathematical modeling. Built a Python automation framework to perform frequency-domain analysis by injecting small-signal perturbations and computing the converter admittance matrix. Processed simulation data using NumPy, FFT, and Matplotlib to generate Bode plots, and performed system stability analysis using Nyquist criteria and eigenvalue decomposition.',
+                                'https://github.com/amanmr795/Grey-box-Approach-for-Modeling-of-Converter-Interfaced-Power-Systems.git',
+                                ''
+                            )">
+                            ✨ Ask AI
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:amanmr795@gmail.com">Gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/amaniitindore795/" target="_blank" rel="noopener noreferrer">LinkedIn.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Aman. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ════════════════════════════════════════════════════
+         AI CHATBOT WIDGET
+    ════════════════════════════════════════════════════ -->
+
+    <!-- Floating Chat Button -->
+<div class="chat-bubble" id="chatBubble" onclick="toggleChat()">
+    <span class="chat-bubble-icon" id="bubbleIcon">💬</span>
+    <span class="chat-bubble-label">Ask AI</span>
+</div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">A</div>
+                <div>
+                    <div class="chat-header-name">Aman's AI Assistant</div>
+                    <div class="chat-header-status">Ask me anything about Aman!</div>
+                </div>
+            </div>
+            <button class="chat-close-btn" onclick="toggleChat()">✕</button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <!-- Welcome message -->
+            <div class="chat-message bot-message">
+                <div class="message-bubble">
+                    👋 Hi! I'm Aman's AI assistant. Ask me about his skills, projects, education, or how to get in touch!
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Suggestion Pills -->
+        <div class="chat-suggestions" id="chatSuggestions">
+            <button class="suggestion-pill" onclick="sendSuggestion('What are Aman\'s skills?')">Skills</button>
+            <button class="suggestion-pill" onclick="sendSuggestion('Tell me about Aman\'s projects')">Projects</button>
+            <button class="suggestion-pill" onclick="sendSuggestion('What is Aman\'s education?')">Education</button>
+            <button class="suggestion-pill" onclick="sendSuggestion('How can I contact Aman?')">Contact</button>
+        </div>
+
+        <div class="chat-input-area">
+            <input
+                type="text"
+                id="chatInput"
+                class="chat-input"
+                placeholder="Ask something about Aman..."
+                onkeydown="handleChatKeydown(event)"
+            />
+            <button class="chat-send-btn" onclick="sendChatMessage()">
+                ➤
+            </button>
+        </div>
+    </div>
+
+    <script src="new1.js"></script>
+    <script src="ai-features.js"></script>
+</body>
+</html>
