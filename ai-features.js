@@ -4,7 +4,7 @@
 //  Backend: Flask running on http://localhost:5000
 // ══════════════════════════════════════════════════════
 
-const API_BASE = "https://your-app.onrender.com/api";
+const API_BASE = "https://personal-portfolio-zt4l.onrender.com";
 
 // ══════════════════════════════════════════════════════
 //  CHATBOT
