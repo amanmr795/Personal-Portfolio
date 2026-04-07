@@ -149,8 +149,12 @@ def summarize_project():
 def health():
     return jsonify({"status": "ok", "message": "Aman's AI backend is running with Groq!"})
 
+@app.route("/")
+def home():
+    return "Aman's AI Backend is running 🚀"
 
 if __name__ == "__main__":
     print("🚀 Starting Aman's Portfolio AI Backend (Groq)...")
     print("📡 Running on http://localhost:5000")
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
